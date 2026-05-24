@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .tracking {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2563eb;
+            margin: 20px 0;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <h1>
+            Parcel Registered Successfully
+        </h1>
+
+        <p>
+            Hello
+            <%= receiverName %>,
+        </p>
+
+        <p>
+            Your parcel has been registered
+            successfully in the Dynamic Mail
+            Transmission System.
+        </p>
+
+        <div class="tracking">
+            <%= trackingId %>
+        </div>
+
+        <p>
+            Use this tracking ID to track your
+            parcel in real-time.
+        </p>
+
+        <p>
+            Route:
+            <strong>
+                <%= source %> →
+                    <%= destination %>
+            </strong>
+        </p>
+
+        <p>
+            Current Status:
+            <strong>
+                Registered
+            </strong>
+        </p>
+
+        <div class="footer">
+            Thank you for choosing our
+            logistics platform.
+        </div>
+
+    </div>
+</body>
+
+</html>
